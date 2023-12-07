@@ -20,7 +20,6 @@ import {
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { Spacer } from "./Spacer"
 
 
 export function Navbar() {
@@ -94,8 +93,6 @@ export function Navbar() {
                             }}>
                                 <UserAvatar size={24}></UserAvatar>
                         </HeaderGlobalAction>
-                        <Spacer width={16}/>
-
                     </HeaderGlobalBar>
                 </Header>
             )}
