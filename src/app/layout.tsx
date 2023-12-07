@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
-import "./globals.css";
+import "./globals.scss";
 import { ReactNode } from "react"
+import { Navbar } from "@/components/Navbar"
 
-const inter = Roboto({ weight: "300", subsets: ["latin"] });
+const thefont = Roboto({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
     title: "NextJS and Carbon",
@@ -14,10 +15,8 @@ export const metadata: Metadata = {
 export default function RootLayout(props: { children: ReactNode }) {
     return (
         <html lang="en">
-            <body className={inter.className}>
-                <nav>
-                    Hello
-                </nav>
+            <body className={thefont.className}>
+                <Navbar></Navbar>
                 <main>
                     {props.children}
                 </main>
