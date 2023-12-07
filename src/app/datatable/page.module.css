@@ -1,0 +1,8 @@
+
+.datatablepage {
+    display: flex;
+    flex-direction: column;
+    height: 1px; 
+    flex-grow: 1;
+    overflow-y: auto;
+}

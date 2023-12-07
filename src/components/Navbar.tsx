@@ -1,6 +1,6 @@
 "use client";
 
-import { Switcher, Notification, UserAvatar } from "@carbon/react/icons";
+import { UserAvatar } from "@carbon/react/icons";
 
 import {
     Header,
@@ -81,6 +81,16 @@ export function Navbar() {
                                     }}
                                 >
                                     Impressum
+                                </HeaderMenuItem>
+                                <HeaderMenuItem
+                                    onClick={() => {
+                                        if (isSideNavExpanded) {
+                                            onClickSideNavExpand()
+                                        }
+                                        router.push("/datatable")
+                                    }}
+                                >
+                                    Datatable
                                 </HeaderMenuItem>
                             </HeaderSideNavItems>
                         </SideNavItems>
