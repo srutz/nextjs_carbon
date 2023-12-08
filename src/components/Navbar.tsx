@@ -56,6 +56,47 @@ export function Navbar() {
                                 router.push("/imprint")
                             }}
                         >Impressum</HeaderMenuItem>
+                                <HeaderMenuItem
+                                    onClick={() => {
+                                        if (isSideNavExpanded) {
+                                            onClickSideNavExpand()
+                                        }
+                                        router.push("/datatable")
+                                    }}
+                                >
+                                    Datatable
+                                </HeaderMenuItem>
+                                <HeaderMenuItem
+                                    onClick={() => {
+                                        if (isSideNavExpanded) {
+                                            onClickSideNavExpand()
+                                        }
+                                        router.push("/tabs")
+                                    }}
+                                >
+                                    Tabs
+                                </HeaderMenuItem>
+                                <HeaderMenuItem
+                                    onClick={() => {
+                                        if (isSideNavExpanded) {
+                                            onClickSideNavExpand()
+                                        }
+                                        router.push("/form")
+                                    }}
+                                >
+                                    Form
+                                </HeaderMenuItem>
+                                <HeaderMenuItem
+                                    onClick={() => {
+                                        if (isSideNavExpanded) {
+                                            onClickSideNavExpand()
+                                        }
+                                        router.push("/stickytable")
+                                    }}
+                                >
+                                    Stickytable
+                                </HeaderMenuItem>
+
                     </HeaderNavigation>
                     <SideNav
                         aria-label="Side navigation"
@@ -111,6 +152,16 @@ export function Navbar() {
                                     }}
                                 >
                                     Form
+                                </HeaderMenuItem>
+                                <HeaderMenuItem
+                                    onClick={() => {
+                                        if (isSideNavExpanded) {
+                                            onClickSideNavExpand()
+                                        }
+                                        router.push("/stickytable")
+                                    }}
+                                >
+                                    Stickytable
                                 </HeaderMenuItem>
                             </HeaderSideNavItems>
                         </SideNavItems>

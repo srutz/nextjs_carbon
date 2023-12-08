@@ -20,3 +20,22 @@ main {
     overflow-y: auto;
     margin-top: 48px;
 }
+
+/* wenn man in einem div außemrum die Klassen   sticky  setzet
+ * dann bekommt die carbon datatable ein sticky scrolling
+ */
+
+.sticky table thead th { 
+   position: sticky !important;
+   top: 0;
+   z-index: 1;
+   border: 0px solid #54585d;
+}
+    
+
+.sticky .cds--data-table-container {
+    height: 1px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;    
+}
