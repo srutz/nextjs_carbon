@@ -92,6 +92,16 @@ export function Navbar() {
                                 >
                                     Datatable
                                 </HeaderMenuItem>
+                                <HeaderMenuItem
+                                    onClick={() => {
+                                        if (isSideNavExpanded) {
+                                            onClickSideNavExpand()
+                                        }
+                                        router.push("/tabs")
+                                    }}
+                                >
+                                    Tabs
+                                </HeaderMenuItem>
                             </HeaderSideNavItems>
                         </SideNavItems>
                     </SideNav>
