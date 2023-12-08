@@ -102,6 +102,16 @@ export function Navbar() {
                                 >
                                     Tabs
                                 </HeaderMenuItem>
+                                <HeaderMenuItem
+                                    onClick={() => {
+                                        if (isSideNavExpanded) {
+                                            onClickSideNavExpand()
+                                        }
+                                        router.push("/form")
+                                    }}
+                                >
+                                    Form
+                                </HeaderMenuItem>
                             </HeaderSideNavItems>
                         </SideNavItems>
                     </SideNav>
