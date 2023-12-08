@@ -22,8 +22,7 @@ import classes from "./page.module.css";
 
 from:
 
-https://react.carbondesignsystem.com/?path=/story/components-tabs--default
-
+https://react.carbondesignsystem.com/?path=/story/components-form--default
 */
 
 export default function Page() {
